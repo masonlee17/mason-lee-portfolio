@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mason Lee</title>
+  <meta name="description" content="Mason Lee — Revenue operator and developer. First revenue hire at AcquiOS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Mason Lee">ML</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&#x2715;</button>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#work" class="mobile-nav-link">Work</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h1 class="hero-name">Mason Lee</h1>
+        <p class="hero-subtitle">Account Executive, Revenue &amp; Operations.</p>
+        <p class="hero-bio">
+          First revenue hire at AcquiOS. I have experience closing enterprise contracts and building the tooling
+          that supports them. UCLA Economics and Statistics &amp; Data Science, graduating March 2026.
+        </p>
+        <div class="hero-pills">
+          <a href="https://github.com/masonlee17" class="pill" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/mason-lee-464091246" class="pill" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/resume.pdf" class="pill" download="Mason_Lee_Resume.pdf">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="section-label">Selected Projects</p>
+        <h2 class="section-heading">Work</h2>
+        <div class="card-grid">
+
+          <article class="card">
+            <a href="https://acquios.ai" class="card-link-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit acquios.ai">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <h3 class="card-title">acquios.ai</h3>
+            <p class="card-desc">Production website for an AI-powered commercial real estate underwriting platform. 16 pages, full design system, built without a CMS. Includes a custom admin panel.</p>
+            <div class="card-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://benleeproperties.com" class="card-link-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit benleeproperties.com">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <h3 class="card-title">benleeproperties.com</h3>
+            <p class="card-desc">Client site for a Los Angeles real estate brokerage. Clean property-focused design built and shipped independently, with a custom admin panel for listings management.</p>
+            <div class="card-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://thewestwoodtimes.com" class="card-link-arrow" target="_blank" rel="noopener noreferrer" aria-label="Visit thewestwoodtimes.com">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <h3 class="card-title">thewestwoodtimes.com</h3>
+            <p class="card-desc">Passion project. Student publication site self-hosted on Railway. Full editorial layout with article management and a custom admin panel.</p>
+            <div class="card-tags">
+              <span class="tag">Railway</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="https://github.com/masonlee17/freebet" class="card-link-arrow" target="_blank" rel="noopener noreferrer" aria-label="View Freebet Arbitrage Analysis on GitHub">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <h3 class="card-title">Pot of Gold Sidebet Analysis</h3>
+            <p class="card-desc">Passion project. Statistical analysis of the Pot of Gold sidebet on FanDuel, modeled by running tens of millions of Monte Carlo simulations to calculate expected value across all possible outcomes.</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">EV Analysis</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <p class="section-label">Background</p>
+        <h2 class="section-heading">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I joined AcquiOS as the first revenue hire, where I built the company's go-to-market function from zero to a $4M ARR pipeline and closed the company's first institutional contracts with public REITs. I also built most of the technical infrastructure: the production website, MCP integrations connecting our AI tooling to outbound workflows, and the full revenue tech stack.</p>
+            <p>Before that I was an analyst at Helios Ventures, a late-stage and pre-IPO VC firm, where I contributed to $20M in capital deployment decisions. I also served as Chapter President of Zeta Beta Tau at UCLA, managing a 90-person organization through a significant operational restructuring.</p>
+            <p>I am finishing a double major in Economics and Statistics &amp; Data Science at UCLA in March 2026, and I am interested in roles that sit at the intersection of building and deploying, where both technical execution and direct client engagement are required.</p>
+          </div>
+          <div class="about-facts">
+            <dl class="facts-list">
+              <div class="fact-row">
+                <dt class="fact-label">Currently</dt>
+                <dd class="fact-value">AcquiOS, Revenue &amp; Operations</dd>
+              </div>
+              <div class="fact-row">
+                <dt class="fact-label">Education</dt>
+                <dd class="fact-value">UCLA, Econ + Stats &amp; Data Science</dd>
+              </div>
+              <div class="fact-row">
+                <dt class="fact-label">GPA</dt>
+                <dd class="fact-value">3.85, Dean's List x12</dd>
+              </div>
+              <div class="fact-row">
+                <dt class="fact-label">Based in</dt>
+                <dd class="fact-value">Los Angeles, CA</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-label">Capabilities</p>
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-col">
+            <h3 class="skills-col-heading">Languages</h3>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>R</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3 class="skills-col-heading">Tools</h3>
+            <ul class="skills-list">
+              <li>MCP/API Integration</li>
+              <li>Cursor</li>
+              <li>Git</li>
+              <li>Figma</li>
+              <li>Claude Code</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3 class="skills-col-heading">Platforms</h3>
+            <ul class="skills-list">
+              <li>Railway</li>
+              <li>Netlify</li>
+              <li>HubSpot</li>
+              <li>HeyReach</li>
+              <li>ZoomInfo</li>
+              <li>Google Workspace</li>
+              <li>Google Ads</li>
+              <li>Twitter/X Ads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <h2 class="contact-heading">Get in touch</h2>
+          <p class="contact-body">Open to the right opportunities. Best way to reach me is email.</p>
+          <p class="contact-email-plain">masonflee17@gmail.com</p>
+          <a href="mailto:masonflee17@gmail.com" class="pill contact-pill">Email me</a>
+          <div class="contact-links">
+            <a href="https://linkedin.com/in/mason-lee-464091246" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/masonlee17" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Mason Lee &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
