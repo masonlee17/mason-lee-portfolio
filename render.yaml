@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mason-lee-portfolio
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
