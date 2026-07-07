@@ -486,6 +486,23 @@ ul {
   color: var(--navy);
 }
 
+.side-projects-note {
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--mid-gray);
+}
+
+.side-projects-note a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.side-projects-note a:hover {
+  color: var(--mid-gray);
+}
+
 /* ─── Footer ────────────────────────────────────────────────────────── */
 .footer {
   padding: 32px 40px;
@@ -497,6 +514,15 @@ ul {
 .footer p {
   font-size: 13px;
   color: var(--mid-gray);
+}
+
+.footer-link {
+  color: var(--mid-gray);
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--navy);
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────────── */
