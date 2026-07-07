@@ -486,6 +486,83 @@ ul {
   color: var(--navy);
 }
 
+.side-projects-note {
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--mid-gray);
+}
+
+.side-projects-note a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.side-projects-note a:hover {
+  color: var(--mid-gray);
+}
+
+/* ─── Resume modal ──────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgba(17, 24, 39, 0.5);
+}
+
+.modal-overlay.is-open {
+  display: flex;
+}
+
+.modal {
+  background-color: var(--white);
+  border-top: 4px solid var(--navy);
+  border-radius: 6px;
+  padding: 28px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  font-size: 14px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-cancel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mid-gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.modal-cancel:hover {
+  color: var(--navy);
+}
+
 /* ─── Footer ────────────────────────────────────────────────────────── */
 .footer {
   padding: 32px 40px;
@@ -497,6 +574,15 @@ ul {
 .footer p {
   font-size: 13px;
   color: var(--mid-gray);
+}
+
+.footer-link {
+  color: var(--mid-gray);
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--navy);
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────────── */
