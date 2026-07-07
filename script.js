@@ -45,6 +45,41 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
     closeMobileMenu();
   }
+  if (e.key === 'Escape' && resumeModal.classList.contains('is-open')) {
+    closeResumeModal();
+  }
+});
+
+// Resume download confirmation
+var resumeLink = document.getElementById('resumeLink');
+var resumeModal = document.getElementById('resumeModal');
+var resumeConfirm = document.getElementById('resumeConfirm');
+var resumeCancel = document.getElementById('resumeCancel');
+
+function openResumeModal() {
+  resumeModal.classList.add('is-open');
+  resumeModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeResumeModal() {
+  resumeModal.classList.remove('is-open');
+  resumeModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+resumeLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  openResumeModal();
+});
+
+resumeConfirm.addEventListener('click', closeResumeModal);
+resumeCancel.addEventListener('click', closeResumeModal);
+
+resumeModal.addEventListener('click', function(e) {
+  if (e.target === resumeModal) {
+    closeResumeModal();
+  }
 });
 
 // Scroll gradient — rotates angle and deepens dodger blue tint as you scroll
